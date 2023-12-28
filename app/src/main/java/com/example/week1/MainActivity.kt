@@ -7,6 +7,7 @@ import com.google.android.material.navigation.NavigationBarView
 class MainActivity : AppCompatActivity() {
     private val gallery = Gallery()
     private val contact = Contact()
+    private val free = Free()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.gallery -> {
                     supportFragmentManager.beginTransaction().replace(R.id.containers, gallery).commit()
+                    true
+                }
+                R.id.free -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.containers, free).commit()
                     true
                 }
                 else -> false

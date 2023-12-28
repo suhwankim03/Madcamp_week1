@@ -15,4 +15,11 @@
         android:title="갤러리"
         app:showAsAction="always"/>
 
+    <item
+        android:id="@+id/free"
+        android:enabled="true"
+        android:icon="@drawable/free_icon"
+        android:title="자유주제"
+        app:showAsAction="always"/>
+
 </menu>
